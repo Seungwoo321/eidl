@@ -1,0 +1,41 @@
+{
+    "name": "eidl",
+    "version": "1.0.0",
+    "description": "## Available source",
+    "type": "module",
+    "exports": {
+        ".": {
+            "require": "./dist/index.mjs",
+            "import": "./dist/index.cjs"
+        }
+    },
+    "main": "./dist/index.cjs",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "unbuild"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Seungwoo321/eidl.git"
+    },
+    "keywords": [],
+    "author": "Seungwoo, Lee <seungwoo321@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Seungwoo321/eidl/issues"
+    },
+    "homepage": "https://github.com/Seungwoo321/eidl#readme",
+    "devDependencies": {
+        "@types/node": "^20.11.16",
+        "typescript": "^5.3.3",
+        "unbuild": "^2.0.0"
+    },
+    "dependencies": {
+        "@streamparser/json": "^0.0.20",
+        "axios": "^1.6.7"
+    }
+}
