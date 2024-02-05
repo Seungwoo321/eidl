@@ -1,12 +1,12 @@
 {
     "name": "eidl",
-    "version": "1.0.0",
-    "description": "## Available source",
+    "version": "1.0.1",
+    "description": "Economic Indicator Download Library",
     "type": "module",
     "exports": {
         ".": {
-            "require": "./dist/index.mjs",
-            "import": "./dist/index.cjs"
+            "require": "./dist/index.cjs",
+            "import": "./dist/index.mjs"
         }
     },
     "main": "./dist/index.cjs",
@@ -22,7 +22,7 @@
         "type": "git",
         "url": "git+https://github.com/Seungwoo321/eidl.git"
     },
-    "keywords": [],
+    "keywords": ["kosis", "ecos", "oecd", "Economic", "Indicator"],
     "author": "Seungwoo, Lee <seungwoo321@gmail.com>",
     "license": "ISC",
     "bugs": {
