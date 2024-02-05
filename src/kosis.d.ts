@@ -44,10 +44,4 @@ export interface KosisStatic {
     getIndicatorLatestData (config: KosisConfigWithDefaultOptional): Promise<any[]>
 }
 
-declare const kosis: KosisStatic
-
-export {
-    kosis
-}
-
-// declare module 'kosis'
+export declare const kosis: KosisStatic

@@ -2,9 +2,9 @@ import axios from 'axios'
 import type {
     KosisConfigWithDefaultOptional,
     DefaultValues,
-    KosisStatic,
     PeriodCountConfig,
-    PeriodDateConfig
+    PeriodDateConfig,
+    KosisStatic
 } from './kosis.d'
 
 const API_URL = 'https://kosis.kr/openapi'

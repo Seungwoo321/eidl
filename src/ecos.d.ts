@@ -59,10 +59,4 @@ export interface EcosStatic {
     _getEcosUrl<T extends EcosConfigWithDefaultsOptional> (config: T): EcosUrlRule<EcosConfigWithDefaultsOptional>;
 }
 
-declare const ecos: EcosStatic
-
-export {
-    ecos
-}
-
-// declare module 'ecos'
+export declare const ecos: EcosStatic
