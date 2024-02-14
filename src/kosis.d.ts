@@ -1,7 +1,6 @@
 
 export interface IKosisConfig {
     apiKey: string;
-    // method: string;
     orgId: string;
     tblId: string;
     itmId: string;

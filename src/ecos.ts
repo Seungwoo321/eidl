@@ -49,7 +49,7 @@ const ecos: EcosStatic = {
             ...defaultValues,
             ...config,
         }
-        const baseUrl: BaseUrlFormat<typeof fullOptions> = '/' + [fullOptions.serviceName, fullOptions.apiKey, fullOptions.format, fullOptions.language, fullOptions.startCount, fullOptions.endCount, fullOptions.statCode, fullOptions.period, fullOptions.searchStartDate, fullOptions.searchEndDate].join('/') + '/' + fullOptions.itemCode
+        const baseUrl: BaseUrlFormat<typeof fullOptions> = '/' + [fullOptions.serviceName, fullOptions.apiKey, fullOptions.format, fullOptions.language, fullOptions.startCount, fullOptions.endCount, fullOptions.statCode, fullOptions.period, fullOptions.searchStartDate, fullOptions.searchEndDate].join('/') + '/' + fullOptions.itemCode1
         const itemCodes: ItemCodes<typeof fullOptions> = fullOptions.itemCode4 && fullOptions.itemCode3 && fullOptions.itemCode2
             ? `/${fullOptions.itemCode2}/${fullOptions.itemCode3}/${fullOptions.itemCode4}`
             : fullOptions.itemCode3 && fullOptions.itemCode2

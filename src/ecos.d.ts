@@ -6,13 +6,13 @@ export interface IEcosConfig {
     statCode: string;
     searchStartDate: string;
     searchEndDate: string;
-    itemCode: string;
     serviceName: string;
     format: string;
     language: string;
     startCount: string;
     endCount: string;
     period: string;
+    itemCode1: string;
     itemCode2?: string;
     itemCode3?: string;
     itemCode4?: string;
@@ -34,7 +34,7 @@ export type HasKeys<T extends EcosConfigWithDefaultsOptional, K extends any[]> =
         : false
     : true;
 
-export type BaseUrlFormat<T extends EcosConfigWithDefaultsOptional> = HasKeys<T, ['language', 'apiKey', 'format', 'language', 'startCount', 'endCount', 'statCode', 'period', 'searchStartDate', 'searchEndDate', 'itemCode']> extends true ? string : ''
+export type BaseUrlFormat<T extends EcosConfigWithDefaultsOptional> = HasKeys<T, ['language', 'apiKey', 'format', 'language', 'startCount', 'endCount', 'statCode', 'period', 'searchStartDate', 'searchEndDate', 'itemCode1']> extends true ? string : ''
 
 export type ItemCodes<T extends EcosConfigWithDefaultsOptional> = 
     HasKeys<T, ['itemCode2', 'itemCode3', 'itemCode4']> extends true 
