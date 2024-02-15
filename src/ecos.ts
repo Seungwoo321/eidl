@@ -22,7 +22,7 @@ const defaultValues: DefaultValues = {
     /** 요청유형 */
     format: 'json',
     /** 언어구분 */
-    language: 'kr',
+    language: 'ko',
     /** 요청시작건수 */
     startCount: '1',
     /** 요청종료건수 */
@@ -42,7 +42,7 @@ const ecos: EcosStatic = {
     async getIndicatorData (config: EcosConfigWithDefaultsOptional) {
         const url = this._getEcosUrl(config)
         const data = await client.get(url)
-        return data.data.StatisticSearch.row
+        return data.data
     },
     _getEcosUrl(config: EcosConfigWithDefaultsOptional): EcosUrlRule<EcosConfigWithDefaultsOptional> {
         const fullOptions = {
