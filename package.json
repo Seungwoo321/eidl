@@ -1,6 +1,6 @@
 {
     "name": "eidl",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Economic Indicator Download Library",
     "type": "module",
     "exports": {

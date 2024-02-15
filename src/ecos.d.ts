@@ -34,7 +34,7 @@ export type HasKeys<T extends EcosConfigWithDefaultsOptional, K extends any[]> =
         : false
     : true;
 
-export type BaseUrlFormat<T extends EcosConfigWithDefaultsOptional> = HasKeys<T, ['language', 'apiKey', 'format', 'language', 'startCount', 'endCount', 'statCode', 'period', 'searchStartDate', 'searchEndDate', 'itemCode1']> extends true ? string : ''
+export type BaseUrlFormat<T extends EcosConfigWithDefaultsOptional> = HasKeys<T, ['language', 'apiKey', 'format', 'startCount', 'endCount', 'statCode', 'period', 'searchStartDate', 'searchEndDate', 'itemCode1']> extends true ? string : ''
 
 export type ItemCodes<T extends EcosConfigWithDefaultsOptional> = 
     HasKeys<T, ['itemCode2', 'itemCode3', 'itemCode4']> extends true 
