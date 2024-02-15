@@ -40,9 +40,17 @@ const client = axios.create({
 
 const ecos: EcosStatic = {
     async getIndicatorData (config: EcosConfigWithDefaultsOptional) {
-        const url = this._getEcosUrl(config)
-        const data = await client.get(url)
-        return data.data
+        try {
+            const url = this._getEcosUrl(config)
+            const data = await client.get(url)
+            if (data.data.StatisticSearch) {
+                return data.data.StatisticSearch.row
+            } else {
+                return data.data.RESULT
+            }
+        } catch (error) {
+            throw error
+        }
     },
     _getEcosUrl(config: EcosConfigWithDefaultsOptional): EcosUrlRule<EcosConfigWithDefaultsOptional> {
         const fullOptions = {
